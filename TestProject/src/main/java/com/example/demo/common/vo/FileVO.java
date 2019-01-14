@@ -1,16 +1,21 @@
 package com.example.demo.common.vo;
 
-import java.io.File;
+import org.springframework.web.multipart.MultipartFile;
 
 public class FileVO {
-	public File logo;
-
-	public File getLogo() {
-		return logo;
+	private String title;
+	private MultipartFile[] file;
+	public String getTitle() {
+		return title;
 	}
-
-	public void setLogo(File logo) {
-		this.logo = logo;
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public MultipartFile[] getFile() {
+		return file;
+	}
+	public void setFile(MultipartFile[] file) {
+		this.file = file;
 	}
 	
 }

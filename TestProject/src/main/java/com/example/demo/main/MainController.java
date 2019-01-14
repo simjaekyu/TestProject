@@ -12,4 +12,5 @@ public class MainController {
 		model.addAttribute("main","is good");
 		return "main";
 	}
+	
 }
